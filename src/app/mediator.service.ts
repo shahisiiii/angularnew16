@@ -18,6 +18,9 @@ export class MediatorService {
   sendData():any{
     return this.obj1
   }
+  getProduct(){
+    return fetch(`https://fakestoreapi.com/products`)
+  }
 
   constructor() { }
 }
