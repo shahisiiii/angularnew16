@@ -1,7 +1,8 @@
 <p>sender works!</p>
 
-<form #form1="ngForm" (ngSubmit)="sendData"(form1.value)>
+<form #form1="ngForm" (ngSubmit)="sendData(form1.value)">
     username: <input type="text" name="uname" ngModel ><br>
     password: <input type="password" name="psw" ngModel ><br>
     <input type="submit" value="send">
 </form>
+
