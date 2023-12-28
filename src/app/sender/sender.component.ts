@@ -7,9 +7,11 @@ import { MediatorService } from '../mediator.service';
   styleUrls: ['./sender.component.css']
 })
 export class SenderComponent {
+  x:any
   sendData(data:any){
     console.log(data)
     this.m.getData
+    this.x=data
   }
   constructor(public m:MediatorService){
     
