@@ -7,13 +7,15 @@ import { SenderComponent } from './sender/sender.component';
 import { RecieverComponent } from './reciever/reciever.component';
 import { FormsModule } from '@angular/forms';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ProductlistComponent } from './productlist/productlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SenderComponent,
     RecieverComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,
