@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { SenderComponent } from './sender/sender.component';
 import { RecieverComponent } from './reciever/reciever.component';
 import { FormsModule } from '@angular/forms';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SenderComponent,
-    RecieverComponent
+    RecieverComponent,
+    ProductdetailsComponent
   ],
   imports: [
     BrowserModule,
