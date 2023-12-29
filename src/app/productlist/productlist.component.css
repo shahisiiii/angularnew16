@@ -1,0 +1,18 @@
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 126px;
+}
+
+img{
+    
+    width: 125px;
+}
+h1{
+    font-size: .5rem;
+}
+h2{
+    font-size:.8rem;
+}
