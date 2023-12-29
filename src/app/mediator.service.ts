@@ -21,6 +21,8 @@ export class MediatorService {
   getProduct(){
     return fetch(`https://fakestoreapi.com/products`)
   }
-
+  getProductDetials(id:any) {
+    return fetch(`https://fakestoreapi.com/products/${id}`)
+  }
   constructor() { }
 }

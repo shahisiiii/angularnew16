@@ -8,7 +8,7 @@ import { ProductlistComponent } from './productlist/productlist.component';
 const routes: Routes = [
   {path:'sender',component:SenderComponent},
   {path:'reciever',component:RecieverComponent},
-  {path:'productdetails',component:ProductdetailsComponent},
+  {path:'productdetails/:id',component:ProductdetailsComponent},
   {path:'productlist',component:ProductlistComponent},
 
 ];

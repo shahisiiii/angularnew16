@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MediatorService } from '../mediator.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productlist',
@@ -14,7 +15,12 @@ export class ProductlistComponent implements OnInit{
     this.service.getProduct().then((res=>res.json())).then((data=>this.products=data))
 
   }
-  constructor(public service:MediatorService){
+  redirectToProductDetails(id: any) {
+    // console.log(id)
+    return this.route.navigate(['productdetails/',id])
+  }
+  
+  constructor(public service:MediatorService,public route:Router){
 
   }
 }
