@@ -16,7 +16,7 @@ export class ProductlistComponent implements OnInit{
 
   }
   redirectToProductDetails(id: any) {
-    // console.log(id)
+    console.log(id)
     return this.route.navigate(['productdetails/',id])
   }
   

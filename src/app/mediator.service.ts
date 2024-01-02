@@ -22,7 +22,7 @@ export class MediatorService {
     return fetch(`https://fakestoreapi.com/products`)
   }
   getProductDetials(id:any) {
-    return fetch(`https://fakestoreapi.com/products/${id}`)
+    return fetch(`https://fakestoreapi.com/products/${id}/`)
   }
   constructor() { }
 }

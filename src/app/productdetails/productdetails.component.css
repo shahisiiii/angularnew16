@@ -1,0 +1,13 @@
+.card{
+    justify-content: center;
+
+}
+
+img{
+    width: 100px;
+    height: inherit;
+}
+.flex{
+    justify-content: center;
+    width: 200px;
+}

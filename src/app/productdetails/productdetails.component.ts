@@ -10,7 +10,7 @@ import { MediatorService } from '../mediator.service';
 export class ProductdetailsComponent implements OnInit{
   productDetails:any
   ngOnInit(): void {
-    let id = this.rout.snapshot.paramMap.get("{id")
+    let id = this.rout.snapshot.paramMap.get("id")
     this.service.getProductDetials(id).then((res=>res.json())).then((data=>this.productDetails=data))
   }
 
