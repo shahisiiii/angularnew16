@@ -8,6 +8,7 @@ import { RecieverComponent } from './reciever/reciever.component';
 import { FormsModule } from '@angular/forms';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProductlistComponent } from './productlist/productlist.component';
     SenderComponent,
     RecieverComponent,
     ProductdetailsComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

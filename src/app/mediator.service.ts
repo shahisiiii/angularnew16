@@ -24,5 +24,8 @@ export class MediatorService {
   getProductDetials(id:any) {
     return fetch(`https://fakestoreapi.com/products/${id}/`)
   }
+  getCategories(){
+    return fetch(`https://fakestoreapi.com/products/categories`)
+  }
   constructor() { }
 }

@@ -4,13 +4,14 @@ import { SenderComponent } from './sender/sender.component';
 import { RecieverComponent } from './reciever/reciever.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { CategoryComponent } from './category/category.component';
 
 const routes: Routes = [
   {path:'sender',component:SenderComponent},
   {path:'reciever',component:RecieverComponent},
   {path:'productdetails/:id',component:ProductdetailsComponent},
   {path:'productlist',component:ProductlistComponent},
-
+  {path:'categories',component:CategoryComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,7 @@
+
+<nav class="navbar navbar-expand bg-body-tertiary">
+    <form class="container-fluid justify-content-start" *ngFor="let i of categories">
+      <button class="btn btn-success me-2" type="button" (click)="listByCategory(i)">{{i}}</button>
+      
+    </form>
+  </nav>
