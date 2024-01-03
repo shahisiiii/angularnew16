@@ -21,7 +21,8 @@ export class ProductlistComponent implements OnInit{
   }
   fetchData(category:any){
     console.log(category);
-    
+    this.service.getProductByCategories(category).then((res=>res.json())).then((data=>this.products=data))
+
     
 
   }

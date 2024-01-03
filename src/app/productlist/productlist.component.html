@@ -1,4 +1,4 @@
-<app-category (newEvent)="fetchData"></app-category>
+<app-category (newEvent)="fetchData($event)"></app-category>
 
 <div class="flex">
     <div class="card" *ngFor="let i of products">
