@@ -19,6 +19,12 @@ export class ProductlistComponent implements OnInit{
     console.log(id)
     return this.route.navigate(['productdetails/',id])
   }
+  fetchData(category:any){
+    console.log(category);
+    
+    
+
+  }
   
   constructor(public service:MediatorService,public route:Router){
 

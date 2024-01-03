@@ -27,5 +27,8 @@ export class MediatorService {
   getCategories(){
     return fetch(`https://fakestoreapi.com/products/categories`)
   }
+  getProductByCategories(category:any){
+    return fetch(`https://fakestoreapi.com/products/category/${category}`)
+  }
   constructor() { }
 }
