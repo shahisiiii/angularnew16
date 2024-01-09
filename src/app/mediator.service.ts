@@ -18,7 +18,20 @@ export class MediatorService {
   sendData():any{
     return this.obj1
   }
-  getProduct(){
+  fetchToken() {
+    return localStorage.getItem("token")
+  }
+  getProduct() {
+    let header = new Headers() 
+    header.append('content-Type', 'application/json')  
+    let token = this.fetchToken()
+    if (token) {
+      header.append('Autherization',token)
+    }
+    let options: any = {
+      method: 'POST',
+      headers:header
+    }
     return fetch(`https://fakestoreapi.com/products`)
   }
   getProductDetials(id:any) {
@@ -29,6 +42,20 @@ export class MediatorService {
   }
   getProductByCategories(category:any){
     return fetch(`https://fakestoreapi.com/products/category/${category}`)
+  }
+  getToken(data: any) {
+  
+    let header = new Headers()
+    header.append('content-Type', 'application/json')
+    let raw = JSON.stringify(data)
+    let options: any = {
+      method: 'POST',
+      body: raw,
+      headers: header
+    }
+    
+  
+    return fetch(`http://127.0.0.1:8000/products/`)
   }
   constructor() { }
 }

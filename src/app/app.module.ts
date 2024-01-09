@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SenderComponent } from './sender/sender.component';
 import { RecieverComponent } from './reciever/reciever.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { CategoryComponent } from './category/category.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,14 @@ import { CategoryComponent } from './category/category.component';
     RecieverComponent,
     ProductdetailsComponent,
     ProductlistComponent,
-    CategoryComponent
+    CategoryComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
